@@ -1,14 +1,14 @@
-# HTML Code Generation from Images With Deep Neural Networks
+# talks
 
 Writing code in a programming language for a designed graphical user interface created by, is done mostly by developers to build and develop custom websites and software. The development work is not approachable by those unfamiliar with programming, to drive these personas capable of developing the code bases we come up with an automated system. Here we proposed that methods of deep learning and computer vision techniques can be grasped to train a model that will automatically generate HTML code from a single input mockup image and try to build an end-to-end automated system with a good amount of accuracy for developing web pages.
 
 The research work and project is done in my undergrad thesis, you can find it here on [my site](https://taneemishere.github.io/projects/project-one.html).
 
-> Live Demo: [Hugging Face Space](https://huggingface.co/spaces/taneemishere/html-code-generation-from-images-with-deep-neural-networks)
+> Live Demo: [Hugging Face Space](https://huggingface.co/spaces/taneemishere/talks)
 
 ## The Architecture
 
-![Architecture](https://raw.githubusercontent.com/taneemishere/html-code-generation-from-images-with-deep-neural-networks/main/resources-for-md/model-architecture.png)
+![Architecture](https://raw.githubusercontent.com/taneemishere/talks/main/resources-for-md/model-architecture.png)
 As a whole the model is of two parts, the ```autoencoder``` part which captures the images and encode it into inner features and then the decoder tries to regenerate the input image from those lower level features. The language model, which we called as the ```Main_Model``` that receives the input as intermediate code of that input UI, which is the coded bootstrap elements to what we called as the ```DSL Code```, this part learns the stream of elements via sequential learning provided in embeddings. Then both results of inner features from autoencoder and sequential model are concatenated. At last the LSTMs, which are part of the Main_Model, take those inner features and generates the intermediate code as a result, which is then compiled into HTML code through a web compiler.
 <br>For trained model and weights if you need, drop me an email.
 
