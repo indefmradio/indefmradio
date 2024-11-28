@@ -1,4 +1,4 @@
-# talks
+# indefmradio
 
 Writing code in a programming language for a designed graphical user interface created by, is done mostly by developers to build and develop custom websites and software. The development work is not approachable by those unfamiliar with programming, to drive these personas capable of developing the code bases we come up with an automated system. Here we proposed that methods of deep learning and computer vision techniques can be grasped to train a model that will automatically generate HTML code from a single input mockup image and try to build an end-to-end automated system with a good amount of accuracy for developing web pages.
 
